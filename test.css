@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+
+}
+#artist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.art{
+    display: flex;
+    
+    gap: 30px;
+
+    left: 10%;
+    
+    width: 100%;
+}
+.lift{
+    width: 380px;
+    height:630px;
+    /* border: 1px solid black; */
+    background-image: url(./images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+
+}
+.reght{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.lift1{
+   
+   background-image: url(./images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg);
+     background-repeat: no-repeat;
+     background-size: 100%; 
+      border-radius: 15px;
+     position: relative;
+     overflow: hidden;
+     width: 530px;
+     height:300px;
+     /* border: 1px solid black; */
+}
+.lift2{
+     background-image: url(./images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg);
+     background-repeat: no-repeat;
+     background-size: 100%; 
+      border-radius: 15px;
+     position: relative;
+     overflow: hidden;
+     width: 530px;
+     height:300px;
+     /* border: 1px solid black; */
+}
+
+.box{
+/* height: 70px; */
+width: 280px;
+padding: 28px 30px;
+background-color: #fab82ba8;
+display: flex;
+border-radius: 20px;
+flex-direction: column;
+/* align-items: center; */
+gap: 17px;
+position: absolute;
+top:100%;
+left: 4.5%;
+opacity: 0;
+transition: 0.5s;
+backdrop-filter: blur(10px);
+}
+.box1{
+    /* height: 70px; */
+    width: 430px;
+    padding: 42px 30px;
+    background-color: #fab82ba8;
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 17px;
+    position: absolute;
+    top:100%;
+    left: 4.5%;
+    opacity: 0;
+    transition: 0.5s;
+    }
+hr{
+    font-size: 1px;
+    height: 0.1px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.box p{
+    text-transform: capitalize;
+    font-size: 15px;
+    /* padding: 0px 0px 0px 0px; */
+    padding: 4px 0px 0px 0px;
+    color: #717275;
+}
+.box1 p{
+    text-transform: capitalize;
+    font-size: 15px;
+    /* padding: 0px 0px 0px 0px; */
+    padding: 4px 0px 0px 0px;
+    color: #717275;
+}
+.box h2{
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size: 19px;
+}
+.box1 h2{
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size: 19px;
+}
+.bo1{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 7px; 
+}
+.bo3{
+    display: flex;
+    /* padding: 0px 30px 0px 0px; */
+    gap: 7px; 
+    flex-direction: column;
+}
+.bo21{
+    display: flex;
+    gap: 70px;
+    /* flex-direction: row; */
+}
+.bo2{
+    display: flex;
+    justify-content: space-around;
+}
+.bo2 p{
+cursor: pointer;
+color: rgb(242, 54, 16) ;
+transition: 0.3s;
+
+}
+.bo2 p:hover{
+color: aliceblue;
+
+}
+.lift:hover .box{
+    top: 63%;
+    opacity: 1;
+
+}
+.lift1:hover .box1{
+    top: 10%;
+    opacity: 1;
+
+}
+.lift2:hover .box1{
+    top:10%;
+    opacity: 1;
+
+}
+.bo22{
+    display: flex;
+    gap: 10px;
+}
