@@ -7,12 +7,17 @@ body{
     font-family: 'Outfit', sans-serif;
 }
 #header{
-    position: relative;
     /* border: 1px solid red;   */
     /* width: 1451px; */
     overflow: hidden;
-    /* z-index: -1; */
+    z-index: 1;
     height: 664px;
+}
+.vide{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
 }
 .ss svg{
     padding: 5px 0px 0px 0px;
@@ -31,28 +36,21 @@ body{
     height: 100%;
 
 }
-.sticky{
-    position: relative;
-    top: 1%;
-}
-
-
-
 
 
 .link ul{
     list-style-type: none;
 }
 .link ul li{
-    gap: 50px;
+    gap: 30px;
     display: flex;
     justify-content: center;
 }
 .link ul li a{
-    position: relative;
-    left: 43%;
+    /* position: relative;
+    left: 43%; */
     font-size: 20px;
-    padding: 20px 0px 0px 0px;
+    padding: 20px 20px 0px 0px;
     text-transform: capitalize;
     text-decoration: none;
     color: aliceblue;
@@ -71,13 +69,10 @@ body{
     font-size: 17px;
     text-align: center;
 }
-.middle .hsh h1{
- 
-}
+
+
 .link ul li span{
-    position: relative;
-    left: 50%; 
-    top: 1%; 
+    
     color: aliceblue;
     font-weight: 1700;
     /* height: 30px; */
@@ -91,25 +86,31 @@ body{
 }
 .container{
     display: flex;
-    justify-content: space-around;
-    position: absolute;
+    justify-content: space-evenly;
+  
     color: rgb(255, 255, 255);
-    top: 02%;
+    padding: 10px 0px 0px 0px;
+    /* background-color: transparent; */
+   
     /* z-index: 1; */
     
 }
-.links{
-    display: flex;
-    justify-content: space-between;
-
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.34);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.359);
 }
+
 .ss{
     width: 98.6%;
     height: 40px;
     background-color:#f8cb2e;
 }
 .hea h1{
- padding: 0px 0px 20px 30px;
+ padding: 10px 0px 20px 0px;
  text-transform: capitalize;
  font-size: 35px;
  /* font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
@@ -139,7 +140,7 @@ body{
     color: aliceblue;
     /* font-family: Arial, Helvetica, sans-serif; */
     position: absolute;
-    top: 90%;
+    top: 104%;
     gap: 20px;  
 }
 
@@ -279,7 +280,7 @@ font-weight: 100;
 .lift{
     width: 480px;
     height:700px;
-    /* border: 1px solid black; */
+    
     background-image: url(./images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -304,7 +305,7 @@ font-weight: 100;
      overflow: hidden;
      width: 530px;
      height:330px;
-     /* border: 1px solid black; */
+
 }
 .lift2{
      background-image: url(./images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg);
@@ -315,37 +316,37 @@ font-weight: 100;
      overflow: hidden;
      width: 530px;
      height:330px;
-     /* border: 1px solid black; */
+     
 }
 
 .box{
-/* height: 70px; */
+
 width: 380px;
-padding: 28px 30px;
-background-color: #fab82ba8;
+padding: 7% 30px;
+background-color: #f4b115b7;
 display: flex;
 border-radius: 20px;
 flex-direction: column;
-/* align-items: center; */
+
 gap: 17px;
 position: absolute;
 top:100%;
 left: 4.5%;
 opacity: 0;
 transition: 0.5s;
-backdrop-filter: blur(10px);
+backdrop-filter: blur(8px);
 }
 .box1{
-    /* height: 70px; */
+
     width: 430px;
     padding: 42px 30px;
-    background-color: #fab82ba8;
-    backdrop-filter: blur(10px);
+    background-color: #f4b115b7;
+    backdrop-filter: blur(8px);
 
     display: flex;
     border-radius: 20px;
     flex-direction: column;
-    /* align-items: center; */
+
     gap: 17px;
     position: absolute;
     top:100%;
@@ -361,14 +362,14 @@ hr{
 .box p{
     text-transform: capitalize;
     font-size: 15px;
-    /* padding: 0px 0px 0px 0px; */
+    
     padding: 4px 0px 0px 0px;
     color: #717275;
 }
 .box1 p{
     text-transform: capitalize;
     font-size: 15px;
-    /* padding: 0px 0px 0px 0px; */
+    
     padding: 4px 0px 0px 0px;
     color: #717275;
 }
@@ -386,18 +387,17 @@ hr{
     display: flex;
     flex-direction: column;
     
-    gap: 7px; 
+    gap: 25px; 
 }
 .bo3{
     display: flex;
-    /* padding: 0px 30px 0px 0px; */
-    gap: 7px; 
+    gap: 25px; 
     flex-direction: column;
 }
 .bo21{
     display: flex;
-    gap: 70px;
-    /* flex-direction: row; */
+    gap: 30px;
+
 }
 .bo2{
     display: flex;
@@ -414,7 +414,7 @@ color: aliceblue;
 
 }
 .lift:hover .box{
-    top: 70%;
+    top: 63%;
     opacity: 1;
 
 }
@@ -433,3 +433,285 @@ color: aliceblue;
     gap: 10px;
 }
 
+tr , td,th{
+    /* border: 1px solid black; */
+    /* border: collapse; */
+
+}
+
+#schedule{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    gap: 50px;
+    padding: 50px 0px 0px 0px;
+    background-image: url(./images/nainoa-shizuru-unsplash-blur.jpg);
+    align-items: center;
+    /* justify-content: center; */
+    color: aliceblue;
+    text-transform: capitalize;
+} 
+.table{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    gap: 50px;
+    padding: 150px 0px 0px 0px;
+    align-items: center;
+    position: relative;
+    /* justify-content: center; */
+    color: aliceblue;
+    text-transform: capitalize;
+}
+table{
+    box-shadow: 03px 03px 10px rgba(255, 255, 255, 0.421);
+    border-radius: 15px;
+     border-collapse: collapse;
+}
+.dd h1{
+    font-size: 50px;
+}
+
+.empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 40px; */
+    height: 170px;
+    width: 350px;
+    background-image: url(./images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.empty1{
+    /* padding: 40px; */
+    height: 170px;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(./images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg);
+    background-size: 100%; */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.empty2{
+    background-color: #212529;
+    border-radius: 0px 0px 15px 0px;
+    /* padding: 40px; */
+    height: 170px;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(./images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg);
+    background-size: 100%; */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tank{
+    padding: 15px;
+    background-color: rgb(242, 54, 16);
+   
+}
+.tank1{
+    padding:15px;
+    background-color: rgb(242, 54, 16);
+    border-radius: 15px 0px 0px 0px;
+}
+.tank2{
+    padding: 30px;
+    background-color: rgb(242, 54, 16);
+    border-radius: 0px 15px 0px 0px;
+}
+.bank{
+    background-color: #212529;
+    text-transform: capitalize;
+    padding: 0px 0px 0px 15px;
+}
+.bank1{
+    background-color: #212529;
+    text-transform: capitalize;
+    padding: 0px 0px 0px 15px;
+    border-radius: 0px 0px 0px 15px;
+}
+.lafp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100px;
+    justify-content: center;
+    align-self:center ;
+    gap:0px ;
+    padding: 30px 0px 0px 0px;
+    width: 350px;
+
+}
+
+.laft{
+    /* padding: 30px; */
+    height:270px;
+    width: 550px;
+    border: 5px dotted rgb(38, 38, 38);
+    border-radius: 17px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    flex-direction: column;
+}
+#pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    gap: 20px;
+     background-color: azure;
+    flex-direction: column;
+}
+.sade{
+    display: flex;
+    gap: 35px;
+    
+}
+.sade span{
+    font-size: 30px;
+}
+.boq{
+   height: 120px;
+   width: 120px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    color: white;
+    justify-content: center;
+    background-color:rgb(242, 54, 16) ;
+}
+.sss{
+    position: absolute;
+    top: 3%;
+    right: 6%;
+}
+.raght{
+    /* padding: 30px; */
+    height:300px;
+    width: 570px;
+    border: 5px dotted rgb(38, 38, 38);
+    border-radius: 17px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 0px;
+    flex-direction: column;
+}
+.ticket {
+    /* color: rgb(242, 46, 16); */
+    color: #f8cb2e;
+    position: relative;
+    top: 30px;
+    /* border: 1px solid black; */
+    width: 90px;
+    
+    
+}
+.ticket p{
+font-size: 20px;
+text-transform: capitalize;
+}
+.ticket::before{
+    content: "";
+    position: absolute;
+    top: 90%;
+    background-color: #f8cb2e;
+    height: 2px;
+    width: 79px;
+    left: 0;
+    transition: 0.4s;
+}
+.ticket:hover::before{
+    left: 100%;
+    width: 0;
+}
+
+.dd{
+    position: absolute;
+    top: 5%;
+}
+
+.nigga input{
+    height: 45px;
+    width: 306px;
+    padding: 0px 0px 0px 10px;
+    
+  
+}
+.inputs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* height: 500px; */
+    height: 370px;
+    padding: 30px;
+    gap: 30px;
+    border-radius: 30px;
+    /* border: 1px solid black;  */
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.211) ;
+    background-color: rgb(255, 255, 255);
+
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.comp{
+    height: 50px;
+    width: 630px;
+    padding: 0px 0px 0px 10px;
+
+}
+#contact{
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    display: flex;
+    height: 700px;
+    justify-content: center;
+
+}
+.bnt button{
+    /* height: 10px; */
+    padding: 15px;
+    width: 300px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(242, 54, 16);
+    color: aliceblue;
+    font-size: 17px;
+}
+.bnt{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 80%;
+    left: 28%;
+}
+input{
+    border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.527);
+}
+#contact h1{
+font-size: 55px;
+}
