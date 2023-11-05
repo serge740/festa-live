@@ -1,14 +1,27 @@
 *{
     margin: 0;
+    /* border: 1px solid red; */
     padding: 0;
     /* border: 1px solid red; */
+}
+* a{
+    text-decoration: none;
 }
 body{
     font-family: 'Outfit', sans-serif;
 }
+.why{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
 #header{
     /* border: 1px solid red;   */
     /* width: 1451px; */
+    /* position: relative; */
     overflow: hidden;
     z-index: 1;
     height: 664px;
@@ -16,9 +29,11 @@ body{
 .vide{
     position: absolute;
     top: 0;
-    width: 100%;
+    overflow: hidden;
+    width:100%;
     z-index: -1;
 }
+.vide
 .ss svg{
     padding: 5px 0px 0px 0px;
     height: 25px;
@@ -33,6 +48,7 @@ body{
 }
 #header video{
     width: 100%;
+    padding: 50px 0px;
     height: 100%;
 
 }
@@ -56,11 +72,16 @@ body{
     color: aliceblue;
     /* font-family: Arial, Helvetica, sans-serif; */
     /* z-index: 1; */
+    transition: 0.5s;
 }
+.link ul li a:hover{
+    color: rgb(242, 54, 16);
+}
+
 .middle{
     position: absolute;  
     /* float: inline; */
-    top: 35%;
+    top:45%;
     left: 32%;
     color: aliceblue;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
@@ -136,25 +157,50 @@ nav{
 }
 .downp{
     display: flex;
-    /* justify-content: space-around; */
+    /* justify-content: center; */
     color: aliceblue;
     /* font-family: Arial, Helvetica, sans-serif; */
     position: absolute;
-    top: 104%;
+    /* width: 1200px; */
+    top: 105%;
     gap: 20px;  
 }
-
+@keyframes serge {
+    0%{
+         transform: rotate(0deg);
+     }
+     
+     100%{
+       
+         transform: rotate(360deg);
+     }
+ 
+ }
 .p1 svg{
     height: 30px;
     width: 30px;
     fill: rgb(242, 54, 16) ;
     padding: 3px 0px 0px 0px;
-}.p2 svg{
+}
+.svg1:hover {
+    animation: serge 2s linear infinite; 
+    background-color: #F8CB2E;   
+}
+.svg3:hover {
+    animation: serge 2s linear infinite; 
+    background-color: #F8CB2E;   
+}
+.svg2:hover {
+    animation: serge 2s linear infinite;   
+    background-color: #F8CB2E;   
+}
+.p2 svg{
     height: 30px;
     width: 30px;
     fill: rgb(242, 54, 16) ;
     padding: 3px 0px 0px 0px;
 }.p3 svg{
+    transition: 0.4s;
     height: 17px;
     width: 17px;
     fill: white;
@@ -266,7 +312,19 @@ font-weight: 100;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    height: 960px;
+    /* height: 960px; */
+
+    padding: 70px 10px;
+}
+.sac{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* height: 960px; */
+
+    padding: 70px 10px; 
 }
 .art{
     display: flex;
@@ -433,7 +491,7 @@ color: aliceblue;
     gap: 10px;
 }
 
-tr , td,th{
+tr, td,th{
     /* border: 1px solid black; */
     /* border: collapse; */
 
@@ -569,7 +627,8 @@ table{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    /* height: 700px; */
+    padding:100px 0px;
     gap: 20px;
      background-color: azure;
     flex-direction: column;
@@ -683,10 +742,12 @@ form{
 
 }
 #contact{
+    padding: 30px 0px 0px 0px;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 100px;
     display: flex;
+    position: relative;
     height: 700px;
     justify-content: center;
 
@@ -695,6 +756,7 @@ form{
     /* height: 10px; */
     padding: 15px;
     width: 300px;
+    cursor: pointer;
     border: none;
     border-radius: 20px;
     background-color: rgb(242, 54, 16);
@@ -715,3 +777,243 @@ input{
 #contact h1{
 font-size: 55px;
 }
+.bax{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    width: 500px;
+    background-color: rgba(212, 237, 248, 0.671);
+    border-radius: 50px;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 21%;
+    text-transform: capitalize;
+    /* overflow: hidden; */
+}
+
+.ba1{
+    padding: 15px 40px;
+    width: 220px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.419);
+    background-color: rgb(255, 255, 255);
+    color: #F8CB2E;
+    cursor: pointer;
+
+}
+.ba2{
+    padding: 15px 40px;
+    width: 220px;
+    border-radius: 30px;
+    /* color: rgba(0, 0, 0, 0.735);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.419);
+    background-color: rgb(255, 255, 255); */
+    transition: 0.5s;
+    color: rgba(0, 0, 0, 0.735);
+    cursor: pointer;
+
+}
+.ba2:hover{
+    color: #F8CB2E;
+    padding: 15px 40px;
+    width: 220px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.419);
+    background-color: rgb(255, 255, 255);
+}
+.foo2{
+    padding: 15px 0px 0px 0px;
+    display: flex;
+    gap: 10px;
+}
+
+.foo2 svg{
+    transition: 0.4s;
+    height: 20px;
+    width: 20px;
+    fill: white;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: rgb(242, 54, 16) ;
+}
+.foo1 h1{
+    color: aliceblue;
+    font-size: 70px;
+}
+.foot1{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(242, 54, 16);
+    padding: 20px;
+}
+.foot2{
+    background-color: #000000;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.lank{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.lank h2{
+    color: #F8CB2E;
+    font-size: 30px;
+}
+.lank ul{
+    list-style-type: none;
+}
+.lank ul li{
+   
+}
+.lank ul li a{
+   
+    font-size: 20px;
+    padding: 20px 15px 0px 0px;  
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.6s;
+    color: aliceblue;
+}
+.lank a:hover{
+    color:rgb(242, 54, 16) ;
+}
+.que{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.que h2{
+    font-size: 30px;
+    color: #F8CB2E;
+}
+.que a{
+    color: aliceblue;
+    transition: 0.6s;
+}
+.que a:hover{
+    color:rgb(242, 54, 16);
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: aliceblue;
+    width: 270px;
+}
+.location h2{
+    font-size: 30px;
+    color: #F8CB2E;
+}
+.location p{
+    text-transform: capitalize;
+    font-size: 17px ;
+    font-weight: 100;
+}
+.tick{
+    /* color: rgb(242, 46, 16); */
+    color: #ffffff;
+    position: relative;
+    top: 0px;
+    /* border: 1px solid black; */
+    width: 90px;
+    
+    
+}
+.tick p{
+    font-size: 20px;
+    text-transform: capitalize;
+    }
+    .tick::before{
+        content: "";
+        position: absolute;
+        top: 90%;
+        background-color: #ffffff;
+        height: 2px;
+        width: 88px;
+        left: 0;
+        transition: 0.4s;
+    }
+    .tick:hover::before{
+        left: 100%;
+        width: 0;
+    }
+    .foot3{
+        background-color: #000000;
+        padding: 50px;
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        border-top: 1px solid rgba(255, 255, 255, 0.517)    ;
+        color: #ffffff;
+        justify-content: space-between;
+    }
+    .copy{
+        display: flex;
+        gap: 30px;
+        font-weight: 100;
+    }
+    .o p{
+        text-transform: capitalize;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .po{
+        display: flex;
+        gap: 20px;
+    }
+    .po p{
+        text-transform: capitalize;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .po p:hover{
+        color: rgb(242, 54, 16) ;
+    }
+    .cop{
+        display: flex;
+        gap:05px;
+    }
+    .c p{
+        color: #f8cc2ed3;
+        transition: 0.5s;
+    }
+    .c:hover p{
+        color: rgb(242, 54, 16) ;
+    }
+
+
+    @media (max-width:1212px) {
+        .sade{
+            display: flex;
+            flex-direction: column;
+        }
+       .p1 , .p2 ,.p3 {
+        padding: 0px 0px 0px 30px;
+       }
+       .downp{
+        display: flex;
+        gap: 0px;
+        position: absolute;
+        top: 17%;
+       }
+    }
+    @media (max-width:1000px) {
+        .sac{
+            display: grid;
+            grid-template-columns: ;
+
+        }
+        
+    }
+    @media (max-width:1167px) {
+        .downp{
+            transform: scale(0.8);
+            border: 1px solid;
+            position: absolute;
+            left: 0;
+            /* width: 100%; */
+        }
+        
+    }
